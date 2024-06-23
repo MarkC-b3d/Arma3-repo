@@ -1,0 +1,4 @@
+this addAction ["Set Trigger", { 
+    params ["_target", "_caller", "_actionId", "_arguments"];
+    fieldSpawn setVariable ["activated", true, true]; 
+["TaskSucceeded", ["", "Trigger Activated"]] call BIS_fnc_showNotification;}];
